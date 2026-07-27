@@ -1,14 +1,14 @@
 :root {
-  --bg: #07111d;
-  --bg-soft: #0c1727;
-  --panel: rgba(15, 25, 42, 0.84);
-  --panel-strong: rgba(20, 33, 54, 0.92);
-  --text: #edf4ff;
-  --muted: #afbdd0;
-  --accent: #f2b544;
-  --accent-2: #64d0c8;
-  --line: rgba(255, 255, 255, 0.12);
-  --shadow: 0 20px 60px rgba(0, 0, 0, 0.32);
+  --bg: #fff7fb;
+  --bg-soft: #fdeef5;
+  --panel: rgba(255, 255, 255, 0.82);
+  --panel-strong: rgba(255, 255, 255, 0.94);
+  --text: #2d2028;
+  --muted: #6f5c69;
+  --accent: #e56b8f;
+  --accent-2: #a77bd6;
+  --line: rgba(187, 126, 155, 0.2);
+  --shadow: 0 18px 50px rgba(110, 64, 89, 0.14);
 }
 
 * {
@@ -24,9 +24,10 @@ body {
   color: var(--text);
   font-family: "Aptos", "Segoe UI", sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(100, 208, 200, 0.2), transparent 30%),
-    radial-gradient(circle at top right, rgba(242, 181, 68, 0.16), transparent 28%),
-    linear-gradient(180deg, #050b13 0%, var(--bg) 45%, #09111d 100%);
+    radial-gradient(circle at top left, rgba(229, 107, 143, 0.18), transparent 30%),
+    radial-gradient(circle at top right, rgba(167, 123, 214, 0.16), transparent 28%),
+    radial-gradient(circle at 50% 0%, rgba(255, 215, 228, 0.65), transparent 42%),
+    linear-gradient(180deg, #fffafd 0%, var(--bg) 46%, #fff3f8 100%);
 }
 
 body::before {
@@ -35,10 +36,10 @@ body::before {
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    linear-gradient(rgba(167, 123, 214, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(167, 123, 214, 0.035) 1px, transparent 1px);
   background-size: 48px 48px;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), transparent 92%);
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.34), transparent 92%);
 }
 
 a {
@@ -61,7 +62,7 @@ img {
   top: 0;
   z-index: 20;
   backdrop-filter: blur(18px);
-  background: rgba(6, 12, 20, 0.72);
+  background: rgba(255, 248, 251, 0.76);
   border-bottom: 1px solid var(--line);
 }
 
@@ -110,7 +111,7 @@ img {
 }
 
 .alt {
-  background: rgba(255, 255, 255, 0.025);
+  background: rgba(255, 245, 249, 0.72);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -167,7 +168,7 @@ img {
 }
 
 .typewriter-text {
-  color: var(--accent-2);
+  color: var(--accent);
   min-height: 1.2em;
   display: inline-block;
 }
@@ -221,14 +222,14 @@ img {
 }
 
 .button.primary {
-  background: linear-gradient(135deg, var(--accent), #f7d77c);
-  color: #1a1407;
+  background: linear-gradient(135deg, #e56b8f, #f4b7c7);
+  color: #fff7fb;
   border-color: transparent;
   box-shadow: var(--shadow);
 }
 
 .button.secondary {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.72);
 }
 
 .hero-card,
@@ -265,9 +266,9 @@ img {
   object-fit: cover;
   object-position: center top;
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(187, 126, 155, 0.18);
   margin-bottom: 18px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .profile-summary {
@@ -282,7 +283,7 @@ img {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(100, 208, 200, 0.22), transparent 70%);
+  background: radial-gradient(circle, rgba(167, 123, 214, 0.18), transparent 70%);
 }
 
 .hero-card h2,
@@ -362,8 +363,8 @@ img {
   min-height: 34px;
   padding: 0.4rem 0.8rem;
   border-radius: 999px;
-  border: 1px solid rgba(100, 208, 200, 0.28);
-  background: rgba(100, 208, 200, 0.08);
+  border: 1px solid rgba(229, 107, 143, 0.24);
+  background: rgba(229, 107, 143, 0.08);
   color: var(--text);
   font-size: 0.86rem;
   white-space: nowrap;
@@ -389,7 +390,7 @@ img {
   padding: 0.45rem 0.75rem;
   border-radius: 999px;
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.88);
   color: var(--text);
 }
 
@@ -408,7 +409,7 @@ img {
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 32px 0;
-  background: rgba(4, 8, 14, 0.82);
+  background: rgba(255, 245, 249, 0.88);
 }
 
 .footer-grid {
